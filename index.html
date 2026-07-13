@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STARS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>STARS</h1>
+
+    <h2>Stalking Threat and Risk Screening</h2>
+
+    <p class="description">
+        ストーカー事案におけるリスク評価スクリーニングツール
+    </p>
+
+    <hr>
+
+    <div id="checklist">
+
+    </div>
+
+    <hr>
+
+    <div class="result">
+
+        <h2>合計得点</h2>
+
+        <div id="score">0 点</div>
+
+        <h2>判定</h2>
+
+        <div id="risk" class="low">
+            低リスク
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h3>判定基準</h3>
+
+    <table>
+
+        <tr>
+            <td>0〜3点</td>
+            <td>低リスク</td>
+        </tr>
+
+        <tr>
+            <td>4点</td>
+            <td>要注意</td>
+        </tr>
+
+        <tr>
+            <td>5点以上</td>
+            <td>ハイリスク</td>
+        </tr>
+
+    </table>
+
+    <button id="resetButton">
+        リセット
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
