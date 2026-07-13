@@ -1,68 +1,72 @@
 // ------------------------
-// STARS Ver.1
+// STARS Ver.2
+// 身体的暴力・性的暴力を別々に判定
 // ------------------------
 
 const checklist = document.getElementById("checklist");
 
-const scoreDisplay = document.getElementById("score");
+const violenceScoreDisplay = document.getElementById("violenceScore");
+const sexualScoreDisplay = document.getElementById("sexualScore");
 
-const riskDisplay = document.getElementById("risk");
+const violenceRiskDisplay = document.getElementById("violenceRisk");
+const sexualRiskDisplay = document.getElementById("sexualRisk");
 
 const resetButton = document.getElementById("resetButton");
 
 
-// 仮の12項目（すべて3点）
+// ------------------------
+// 仮の12項目
+// category:
+// violence = 身体的暴力
+// sexual = 性的暴力
+// ------------------------
 
 const items = [
 
-{ name:"項目1", score:3 },
+{ name:"項目1", score:3, category:"violence" },
+{ name:"項目2", score:3, category:"violence" },
+{ name:"項目3", score:3, category:"violence" },
+{ name:"項目4", score:3, category:"violence" },
+{ name:"項目5", score:3, category:"violence" },
+{ name:"項目6", score:3, category:"violence" },
+{ name:"項目7", score:3, category:"violence" },
 
-{ name:"項目2", score:3 },
-
-{ name:"項目3", score:3 },
-
-{ name:"項目4", score:3 },
-
-{ name:"項目5", score:3 },
-
-{ name:"項目6", score:3 },
-
-{ name:"項目7", score:3 },
-
-{ name:"項目8", score:3 },
-
-{ name:"項目9", score:3 },
-
-{ name:"項目10", score:3 },
-
-{ name:"項目11", score:3 },
-
-{ name:"項目12", score:3 }
+{ name:"項目8", score:3, category:"sexual" },
+{ name:"項目9", score:3, category:"sexual" },
+{ name:"項目10", score:3, category:"sexual" },
+{ name:"項目11", score:3, category:"sexual" },
+{ name:"項目12", score:3, category:"sexual" }
 
 ];
 
 
 // ------------------------
-// 項目を表示
+// 項目表示
 // ------------------------
 
-items.forEach((item, index)=>{
+items.forEach((item,index)=>{
 
     const row=document.createElement("div");
 
     row.className="item";
 
     row.innerHTML=`
-        <label>
-            <input
-                type="checkbox"
-                class="riskItem"
-                data-score="${item.score}">
-            ${item.name}
-        </label>
 
-        <strong>${item.score}点</strong>
-    `;
+<label>
+
+<input
+type="checkbox"
+class="riskItem"
+data-score="${item.score}"
+data-category="${item.category}">
+
+${item.name}
+
+</label>
+
+<strong>${item.score}点</strong>
+
+`;
 
     checklist.appendChild(row);
 
@@ -75,42 +79,73 @@ items.forEach((item, index)=>{
 
 function calculateScore(){
 
-    let total=0;
+    let violenceScore=0;
+    let sexualScore=0;
 
     document.querySelectorAll(".riskItem").forEach(box=>{
 
         if(box.checked){
 
-            total+=Number(box.dataset.score);
+            const score=Number(box.dataset.score);
+
+            if(box.dataset.category=="violence"){
+
+                violenceScore+=score;
+
+            }else{
+
+                sexualScore+=score;
+
+            }
 
         }
 
     });
 
-    scoreDisplay.textContent=total+" 点";
+    violenceScoreDisplay.textContent=violenceScore+" 点";
+    sexualScoreDisplay.textContent=sexualScore+" 点";
 
 
-    if(total<=3){
+    //-----------------------
+    // 身体的暴力判定
+    //-----------------------
 
-        riskDisplay.textContent="🟢 低リスク";
+    if(violenceScore<=3){
 
-        riskDisplay.className="low";
+        violenceRiskDisplay.textContent="🟢 低リスク";
+        violenceRiskDisplay.className="low";
+
+    }else if(violenceScore==4){
+
+        violenceRiskDisplay.textContent="🟡 要注意";
+        violenceRiskDisplay.className="medium";
+
+    }else{
+
+        violenceRiskDisplay.textContent="🔴 ハイリスク";
+        violenceRiskDisplay.className="high";
 
     }
 
-    else if(total==4){
 
-        riskDisplay.textContent="🟡 要注意";
+    //-----------------------
+    // 性的暴力判定
+    //-----------------------
 
-        riskDisplay.className="medium";
+    if(sexualScore<=1){
 
-    }
+        sexualRiskDisplay.textContent="🟢 低リスク";
+        sexualRiskDisplay.className="low";
 
-    else{
+    }else if(sexualScore==2){
 
-        riskDisplay.textContent="🔴 ハイリスク";
+        sexualRiskDisplay.textContent="🟡 要注意";
+        sexualRiskDisplay.className="medium";
 
-        riskDisplay.className="high";
+    }else{
+
+        sexualRiskDisplay.textContent="🔴 ハイリスク";
+        sexualRiskDisplay.className="high";
 
     }
 
