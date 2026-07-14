@@ -40,7 +40,18 @@ document.getElementById("resetButton");
 const items = [
 
 {
-name:"<span class='badge badge-violence'>P1</span> 乱暴な言動をされた。〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br><span class='example'>例：大声で「バカヤロー」等と怒鳴る。<br>「コノヤロー」等の粗暴なメールを送信する。<br>あなたの家の前で、車のクラクションを鳴らしたりする。</span>",
+name:`
+<span class="badge badge-violence">P1</span>
+<span class="item-title">
+乱暴な言動をされた。～～～～～～～～～～～～～～～～～～～～～～～～
+</span>
+<br>
+<span class="example">
+例：大声で「バカヤロー」等と怒鳴る。<br>
+「コノヤロー」等の粗暴なメールを送信する。<br>
+あなたの家の前で、車のクラクションを鳴らしたりする。
+</span>
+`,
 score:3,
 category:"violence",
 class:"physical-item"
