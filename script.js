@@ -34,80 +34,93 @@ document.getElementById("resetButton");
 
 const items = [
 
+{
+type:"title",
+title:"🟧 身体的暴力リスク項目",
+class:"physical-title"
+},
+
 
 {
 name:"項目1",
 score:3,
-category:"violence"
+category:"violence",
+class:"physical-item"
 },
-
 
 {
 name:"項目2",
 score:3,
-category:"violence"
+category:"violence",
+class:"physical-item"
 },
-
 
 {
 name:"項目3",
 score:3,
-category:"violence"
+category:"violence",
+class:"physical-item"
 },
-
 
 {
 name:"項目4",
 score:3,
-category:"violence"
+category:"violence",
+class:"physical-item"
 },
-
 
 {
 name:"項目5",
 score:3,
-category:"violence"
+category:"violence",
+class:"physical-item"
 },
-
 
 {
 name:"項目6",
 score:3,
-category:"violence"
+category:"violence",
+class:"physical-item"
+},
+
+
+
+{
+type:"title",
+title:"🟪 性的暴力リスク項目",
+class:"sexual-title"
 },
 
 
 {
 name:"項目7",
 score:3,
-category:"violence"
+category:"sexual",
+class:"sexual-item"
 },
-
-
 
 {
 name:"項目8",
 score:3,
-category:"sexual"
+category:"sexual",
+class:"sexual-item"
 },
-
 
 {
 name:"項目9",
 score:3,
-category:"sexual"
+category:"sexual",
+class:"sexual-item"
 },
-
 
 {
 name:"項目10",
 score:3,
-category:"sexual"
+category:"sexual",
+class:"sexual-item"
 },
 
 
-
-// 注意文
 
 {
 type:"notice",
@@ -118,18 +131,33 @@ text:
 
 
 {
+type:"title",
+title:"🟧 身体的暴力リスク項目",
+class:"physical-title"
+},
+
+
+{
 name:"項目11",
 score:3,
-category:"sexual"
+category:"violence",
+class:"physical-item"
+},
+
+
+{
+type:"title",
+title:"🟪 性的暴力リスク項目",
+class:"sexual-title"
 },
 
 
 {
 name:"項目12",
 score:3,
-category:"sexual"
+category:"sexual",
+class:"sexual-item"
 }
-
 
 ];
 
@@ -142,55 +170,63 @@ category:"sexual"
 
 items.forEach((item)=>{
 
-
-    const row =
-    document.createElement("div");
+const row=document.createElement("div");
 
 
-    if(item.type==="notice"){
+if(item.type==="title"){
+
+row.className =
+"category-title " + item.class;
+
+row.innerHTML =
+item.title;
+
+}
 
 
-        row.className="notice";
+else if(item.type==="notice"){
 
 
-        row.innerHTML =
-        `<p>${item.text}</p>`;
+row.className="notice";
+
+row.innerHTML =
+`<p>${item.text}</p>`;
 
 
-    }
-    
-
-    else{
+}
 
 
-        row.className="item";
+else{
 
 
-        row.innerHTML =
-
-        `
-        <label>
-
-        <input
-        type="checkbox"
-        class="riskItem"
-        data-score="${item.score}"
-        data-category="${item.category}"
-        >
-
-        ${item.name}
-
-        </label>
+row.className =
+"item " + item.class;
 
 
-        <strong>${item.score}点</strong>
-        `;
+row.innerHTML =
+
+`
+<label>
+
+<input
+type="checkbox"
+class="riskItem"
+data-score="${item.score}"
+data-category="${item.category}"
+>
+
+${item.name}
+
+</label>
+
+<strong>${item.score}点</strong>
+
+`;
+
+}
 
 
-    }
-
-
-    checklist.appendChild(row);
+checklist.appendChild(row);
 
 
 });
