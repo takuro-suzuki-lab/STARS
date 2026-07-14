@@ -471,3 +471,18 @@ h1 {
     font-size:18px;
 
 }
+
+#violenceComment,
+#sexualComment{
+
+    margin-top:20px;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    text-align:left;
+
+}
