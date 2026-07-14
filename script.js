@@ -180,9 +180,6 @@ row.className =
 row.innerHTML =
 
 `
-row.innerHTML =
-
-`
 <label class="item-label">
 
 <div class="check-area">
@@ -210,8 +207,6 @@ ${item.name}
 
 </label>
 
-`;
-  
 `;
 
 }
