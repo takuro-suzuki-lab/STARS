@@ -18,6 +18,11 @@ document.getElementById("sexualScore");
 const violenceRiskDisplay =
 document.getElementById("violenceRisk");
 
+const violenceComment =
+document.getElementById("violenceComment");
+
+const sexualComment =
+document.getElementById("sexualComment");
 
 const sexualRiskDisplay =
 document.getElementById("sexualRisk");
@@ -275,7 +280,8 @@ if(violenceScore <=3){
 
 violenceRiskDisplay.textContent =
 "🟢 低い";
-
+violenceComment.textContent =
+"身体的暴力に発展するリスクは比較的低いと考えられます。引き続き状況の変化に注意してください。";
 
 violenceRiskDisplay.className="low";
 
@@ -287,7 +293,8 @@ else if(violenceScore ===4){
 
 violenceRiskDisplay.textContent =
 "🟡 高い";
-
+violenceComment.textContent =
+"身体的暴力に発展する可能性があります。対象者の状況を慎重に観察してください。";
 
 violenceRiskDisplay.className="medium";
 
@@ -299,7 +306,8 @@ else{
 
 violenceRiskDisplay.textContent =
 "🔴 非常に高い";
-
+violenceComment.textContent =
+"身体的暴力へ発展するリスクが非常に高いと考えられます。速やかな安全確保と関係機関との連携を検討してください。";
 
 violenceRiskDisplay.className="high";
 
@@ -317,7 +325,8 @@ if(sexualScore <=1){
 
 sexualRiskDisplay.textContent =
 "🟢 低い";
-
+sexualComment.textContent =
+"性的暴力に発展するリスクは比較的低いと考えられます。引き続き状況の変化に注意してください。";
 
 sexualRiskDisplay.className="low";
 
@@ -329,7 +338,8 @@ else if(sexualScore ===2){
 
 sexualRiskDisplay.textContent =
 "🟡 高い";
-
+sexualComment.textContent =
+"性的暴力に発展する可能性があります。対象者の状況を慎重に観察してください。";
 
 sexualRiskDisplay.className="medium";
 
@@ -341,7 +351,8 @@ else{
 
 sexualRiskDisplay.textContent =
 "🔴 非常に高い";
-
+sexualComment.textContent =
+"性的暴力へ発展するリスクが非常に高いと考えられます。速やかな安全確保と関係機関との連携を検討してください。";
 
 sexualRiskDisplay.className="high";
 
