@@ -40,7 +40,7 @@ document.getElementById("resetButton");
 const items = [
 
 {
-name:"<span class='badge badge-violence'>P1</span> 項目1",
+name:"<span class='badge badge-violence'>P1</span> 乱暴な言動をされた。<br><span class='example'>例：大声で怒鳴る、脅すような発言をする、物に当たる</span>",
 score:3,
 category:"violence",
 class:"physical-item"
@@ -320,7 +320,7 @@ violenceRiskDisplay.className="high";
 // 性的暴力判定
 // ------------------------
 
-if(sexualScore <=1){
+if(sexualScore <=2){
 
 
 sexualRiskDisplay.textContent =
@@ -333,7 +333,7 @@ sexualRiskDisplay.className="low";
 
 }
 
-else if(sexualScore ===2){
+else if(sexualScore ===3){
 
 
 sexualRiskDisplay.textContent =
