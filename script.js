@@ -127,7 +127,31 @@ class:"physical-item"
 
 
 {
-name:"<span class='badge badge-sexual'>S1</span> 項目1",
+name:`
+<div class="item-row">
+
+<div class="badge badge-sexual">
+
+S1
+
+</div>
+
+<div class="item-content">
+
+乱暴な言動をされた。～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+
+<span class="example">
+
+例：大声で「バカヤロー」等と怒鳴る。<br>
+「コノヤロー」等の粗暴なメールを送信する。<br>
+あなたの家の前で車のクラクションを鳴らしたりする。
+
+</span>
+
+</div>
+
+</div>
+`,
 score:3,
 category:"sexual",
 class:"sexual-item"
