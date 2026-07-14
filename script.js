@@ -274,7 +274,7 @@ if(violenceScore <=3){
 
 
 violenceRiskDisplay.textContent =
-"🟢 低リスク";
+"🟢 低い";
 
 
 violenceRiskDisplay.className="low";
@@ -286,7 +286,7 @@ else if(violenceScore ===4){
 
 
 violenceRiskDisplay.textContent =
-"🟡 要注意";
+"🟡 高い";
 
 
 violenceRiskDisplay.className="medium";
@@ -298,7 +298,7 @@ else{
 
 
 violenceRiskDisplay.textContent =
-"🔴 ハイリスク";
+"🔴 非常に高い";
 
 
 violenceRiskDisplay.className="high";
@@ -316,7 +316,7 @@ if(sexualScore <=1){
 
 
 sexualRiskDisplay.textContent =
-"🟢 低リスク";
+"🟢 低い";
 
 
 sexualRiskDisplay.className="low";
@@ -328,7 +328,7 @@ else if(sexualScore ===2){
 
 
 sexualRiskDisplay.textContent =
-"🟡 要注意";
+"🟡 高い";
 
 
 sexualRiskDisplay.className="medium";
@@ -340,7 +340,7 @@ else{
 
 
 sexualRiskDisplay.textContent =
-"🔴 ハイリスク";
+"🔴 非常に高い";
 
 
 sexualRiskDisplay.className="high";
