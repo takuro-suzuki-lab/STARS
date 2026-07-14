@@ -35,91 +35,75 @@ document.getElementById("resetButton");
 const items = [
 
 {
-type:"title",
-title:"🟧 身体的暴力リスク項目",
-class:"physical-title"
-},
-
-
-{
-name:"項目1",
+name:"<span class='badge badge-violence'>P1</span> 項目1",
 score:3,
 category:"violence",
 class:"physical-item"
 },
 
 {
-name:"項目2",
+name:"<span class='badge badge-violence'>P2</span> 項目2",
 score:3,
 category:"violence",
 class:"physical-item"
 },
 
 {
-name:"項目3",
+name:"<span class='badge badge-violence'>P3</span> 項目3",
 score:3,
 category:"violence",
 class:"physical-item"
 },
 
 {
-name:"項目4",
+name:"<span class='badge badge-violence'>P4</span> 項目4",
 score:3,
 category:"violence",
 class:"physical-item"
 },
 
 {
-name:"項目5",
+name:"<span class='badge badge-violence'>P5</span> 項目5",
 score:3,
 category:"violence",
 class:"physical-item"
 },
 
 {
-name:"項目6",
+name:"<span class='badge badge-violence'>P6</span> 項目6",
 score:3,
 category:"violence",
 class:"physical-item"
 },
 
 
-
 {
-type:"title",
-title:"🟪 性的暴力リスク項目",
-class:"sexual-title"
-},
-
-
-{
-name:"項目7",
+name:"<span class='badge badge-sexual'>S1</span> 項目1",
 score:3,
 category:"sexual",
 class:"sexual-item"
 },
 
 {
-name:"項目8",
+name:"<span class='badge badge-sexual'>S2</span> 項目2",
 score:3,
 category:"sexual",
 class:"sexual-item"
 },
 
 {
-name:"項目9",
+name:"<span class='badge badge-sexual'>S3</span> 項目3",
 score:3,
 category:"sexual",
 class:"sexual-item"
 },
 
 {
-name:"項目10",
+name:"<span class='badge badge-sexual'>S4</span> 項目4",
 score:3,
 category:"sexual",
 class:"sexual-item"
 },
-
 
 
 {
@@ -129,16 +113,8 @@ text:
 },
 
 
-
 {
-type:"title",
-title:"🟧 身体的暴力リスク項目",
-class:"physical-title"
-},
-
-
-{
-name:"項目11",
+name:"<span class='badge badge-violence'>P7</span> 項目7",
 score:3,
 category:"violence",
 class:"physical-item"
@@ -146,14 +122,7 @@ class:"physical-item"
 
 
 {
-type:"title",
-title:"🟪 性的暴力リスク項目",
-class:"sexual-title"
-},
-
-
-{
-name:"項目12",
+name:"<span class='badge badge-sexual'>S5</span> 項目5",
 score:3,
 category:"sexual",
 class:"sexual-item"
