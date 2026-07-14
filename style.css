@@ -414,3 +414,36 @@ h1 {
     margin-top: 30px;
     margin-bottom: 10px;
 }
+.badge{
+
+    display:inline-block;
+
+    min-width:38px;
+
+    padding:4px 8px;
+
+    border-radius:20px;
+
+    color:white;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    margin-right:10px;
+
+    font-size:16px;
+
+}
+
+.badge-violence{
+
+    background:#E67E22;
+
+}
+
+.badge-sexual{
+
+    background:#8E44AD;
+
+}
