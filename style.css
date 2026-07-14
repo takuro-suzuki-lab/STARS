@@ -552,3 +552,37 @@ h3{
     padding-left:2em;
 
 }
+
+.item-label{
+
+    display:flex;
+
+    align-items:flex-start;
+
+}
+
+.check-area{
+
+    width:45px;
+
+    text-align:center;
+
+    margin-right:12px;
+
+}
+
+.score-small{
+
+    margin-top:4px;
+
+    font-size:12px;
+
+    color:#888;
+
+}
+
+.item-text{
+
+    flex:1;
+
+}
