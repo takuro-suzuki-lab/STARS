@@ -180,7 +180,12 @@ row.className =
 row.innerHTML =
 
 `
-<label>
+row.innerHTML =
+
+`
+<label class="item-label">
+
+<div class="check-area">
 
 <input
 type="checkbox"
@@ -189,11 +194,21 @@ data-score="${item.score}"
 data-category="${item.category}"
 >
 
+<div class="score-small">
+
+${item.score}点
+
+</div>
+
+</div>
+
+<div class="item-text">
+
 ${item.name}
 
-</label>
+</div>
 
-<strong>${item.score}点</strong>
+</label>
 
 `;
 
