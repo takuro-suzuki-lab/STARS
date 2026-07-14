@@ -1,110 +1,337 @@
-body{
-    font-family: "Helvetica Neue", Arial, sans-serif;
+body {
+
+    font-family:
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
     background:#f4f6f8;
+
     margin:0;
+
     padding:40px;
+
 }
 
-.container{
-    max-width:700px;
+
+
+.container {
+
+    max-width:750px;
+
     margin:auto;
+
     background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 4px 15px rgba(0,0,0,0.1);
+
 }
 
-h1{
+
+
+h1 {
+
     text-align:center;
+
     color:#1f3c88;
+
+    font-size:42px;
+
     margin-bottom:5px;
+
 }
 
-h2{
+
+
+h2 {
+
     text-align:center;
+
     color:#555;
+
 }
 
-.description{
+
+
+.description {
+
     text-align:center;
+
     margin-bottom:30px;
+
+    font-size:16px;
+
 }
 
-#checklist{
-    margin-top:20px;
-    margin-bottom:20px;
-}
 
-.item{
-    display:flex;
-    justify-content:space-between;
-    padding:10px;
-    border-bottom:1px solid #eee;
-    font-size:18px;
-}
 
-.result{
-    text-align:center;
-}
+hr {
 
-#score{
-    font-size:48px;
-    font-weight:bold;
-    color:#1f3c88;
-    margin:20px;
-}
-
-#risk{
-    font-size:36px;
-    font-weight:bold;
-    padding:15px;
-    border-radius:10px;
-}
-
-.low{
-    background:#d4edda;
-    color:#155724;
-}
-
-.medium{
-    background:#fff3cd;
-    color:#856404;
-}
-
-.high{
-    background:#f8d7da;
-    color:#721c24;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
-}
-
-td{
-    border:1px solid #ddd;
-    padding:10px;
-}
-
-button{
-    margin-top:25px;
-    width:100%;
-    padding:15px;
-    font-size:18px;
     border:none;
-    border-radius:8px;
+
+    border-top:1px solid #ddd;
+
+    margin:30px 0;
+
+}
+
+
+
+/* 項目 */
+
+.item {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px;
+
+    border-bottom:1px solid #eee;
+
+    font-size:18px;
+
+}
+
+
+
+.item input {
+
+    transform:scale(1.3);
+
+    margin-right:10px;
+
+}
+
+
+
+/* リスク結果カード */
+
+.card {
+
+    margin:30px 0;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    background:#f8f9fa;
+
+    text-align:center;
+
+}
+
+
+
+/* 点数 */
+
+#violenceScore,
+#sexualScore {
+
+    font-size:52px;
+
+    font-weight:bold;
+
+    color:#1f3c88;
+
+    margin:20px;
+
+}
+
+
+
+/* 判定 */
+
+#violenceRisk,
+#sexualRisk {
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    padding:20px;
+
+    border-radius:12px;
+
+}
+
+
+
+/* 判定色 */
+
+.low {
+
+    background:#d4edda;
+
+    color:#155724;
+
+}
+
+
+
+.medium {
+
+    background:#fff3cd;
+
+    color:#856404;
+
+}
+
+
+
+.high {
+
+    background:#f8d7da;
+
+    color:#721c24;
+
+}
+
+
+
+/* 判定基準 */
+
+.criteria h4 {
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    color:#333;
+
+}
+
+
+
+table {
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-bottom:20px;
+
+}
+
+
+
+td {
+
+    border:1px solid #ddd;
+
+    padding:12px;
+
+    text-align:center;
+
+}
+
+
+
+/* 注意事項 */
+
+.notice {
+
+    background:#f8f8f8;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    line-height:1.7;
+
+}
+
+
+
+.notice h3 {
+
+    margin-top:0;
+
+}
+
+
+
+/* ボタン */
+
+button {
+
+    margin-top:25px;
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:18px;
+
+    border:none;
+
+    border-radius:10px;
+
     background:#1f3c88;
+
     color:white;
+
     cursor:pointer;
+
 }
 
-button:hover{
+
+
+button:hover {
+
     background:#16316f;
+
 }
 
-.card{
 
-    margin-bottom:30px;
+
+/* スマホ対応 */
+
+@media(max-width:600px){
+
+
+body {
+
+    padding:15px;
+
+}
+
+
+.container {
+
+    padding:20px;
+
+}
+
+
+h1 {
+
+    font-size:34px;
+
+}
+
+
+#violenceScore,
+#sexualScore {
+
+    font-size:42px;
+
+}
+
+
+#violenceRisk,
+#sexualRisk {
+
+    font-size:26px;
+
+}
+
 
 }
