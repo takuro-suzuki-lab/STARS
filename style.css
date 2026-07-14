@@ -532,3 +532,19 @@ h3{
     margin-bottom:20px;
 
 }
+
+.example{
+
+    display:block;
+
+    margin-top:6px;
+
+    margin-left:48px;
+
+    font-size:15px;
+
+    color:#666;
+
+    line-height:1.5;
+
+}
