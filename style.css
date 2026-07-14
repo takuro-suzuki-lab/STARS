@@ -335,3 +335,76 @@ h1 {
 
 
 }
+
+/* 回答説明 */
+
+.instruction {
+
+    background:#f4f6f8;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* 項目カテゴリ */
+
+.category-title {
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    padding:15px;
+
+    margin-top:25px;
+
+    border-radius:10px;
+
+}
+
+
+
+/* 身体的暴力 */
+
+.physical-title {
+
+    background:#FCE4D6;
+
+    color:#9E480E;
+
+}
+
+
+
+/* 性的暴力 */
+
+.sexual-title {
+
+    background:#EADCF8;
+
+    color:#5B2C83;
+
+}
+
+
+/* 項目カード */
+
+.physical-item {
+
+    background:#FFF3EC;
+
+}
+
+
+
+.sexual-item {
+
+    background:#F7F0FC;
+
+}
