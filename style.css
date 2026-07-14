@@ -408,3 +408,9 @@ h1 {
     background:#F7F0FC;
 
 }
+
+/* 項目10後の注意文の余白 */
+.notice {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
