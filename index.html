@@ -1,98 +1,233 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>STARS</title>
+<meta charset="UTF-8">
 
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>STARS</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
 <div class="container">
 
-    <h1>STARS</h1>
 
-    <h2>Stalking Threat and Risk Screening</h2>
+<h1>STARS</h1>
 
-    <p class="description">
-        ストーカー事案におけるリスク評価スクリーニングツール
-    </p>
+<h2>
+Stalking Threat and Risk Screening
+</h2>
 
-    <hr>
 
-    <div id="checklist">
+<p class="description">
 
-    </div>
+ストーカー事案におけるリスク評価スクリーニングツール
 
-    <hr>
+</p>
 
-    <div class="result">
 
-    <div class="card">
+<hr>
 
-        <h2>身体的暴力リスク</h2>
 
-        <div id="violenceScore">0 点</div>
+<div id="checklist">
 
-        <div id="violenceRisk" class="low">
-
-            低リスク
-
-        </div>
-
-    </div>
-
-    <br>
-
-    <div class="card">
-
-        <h2>性的暴力リスク</h2>
-
-        <div id="sexualScore">0 点</div>
-
-        <div id="sexualRisk" class="low">
-
-            低リスク
-
-        </div>
-
-    </div>
 
 </div>
-    
-    <hr>
 
-    <h3>判定基準</h3>
 
-    <table>
 
-        <tr>
-            <td>0〜3点</td>
-            <td>低リスク</td>
-        </tr>
+<hr>
 
-        <tr>
-            <td>4点</td>
-            <td>要注意</td>
-        </tr>
 
-        <tr>
-            <td>5点以上</td>
-            <td>ハイリスク</td>
-        </tr>
 
-    </table>
+<div class="result">
 
-    <button id="resetButton">
-        リセット
-    </button>
+
+<div class="card">
+
+<h2>
+身体的暴力リスク
+</h2>
+
+
+<div id="violenceScore">
+0 点
+</div>
+
+
+<div id="violenceRisk" class="low">
+
+🟢 低リスク
 
 </div>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<h2>
+性的暴力リスク
+</h2>
+
+
+<div id="sexualScore">
+
+0 点
+
+</div>
+
+
+<div id="sexualRisk" class="low">
+
+🟢 低リスク
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<hr>
+
+
+
+<h3>
+判定基準
+</h3>
+
+
+
+<div class="criteria">
+
+
+<h4>
+身体的暴力リスク
+</h4>
+
+
+<table>
+
+<tr>
+<td>0〜3点</td>
+<td>低リスク</td>
+</tr>
+
+
+<tr>
+<td>4点</td>
+<td>要注意</td>
+</tr>
+
+
+<tr>
+<td>5点以上</td>
+<td>ハイリスク</td>
+</tr>
+
+
+</table>
+
+
+
+<h4>
+性的暴力リスク
+</h4>
+
+
+<table>
+
+
+<tr>
+<td>0〜1点</td>
+<td>低リスク</td>
+</tr>
+
+
+<tr>
+<td>2点</td>
+<td>要注意</td>
+</tr>
+
+
+<tr>
+<td>3点以上</td>
+<td>ハイリスク</td>
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+<hr>
+
+
+
+
+<div class="notice">
+
+
+<h3>
+注意事項
+</h3>
+
+
+<p>
+
+本ツールは、ストーカー事案に関連するリスク要因を整理するための
+スクリーニングツールです。
+
+</p>
+
+
+<p>
+
+本ツールは、暴力や性的暴力の発生を完全に予測するものではありません。
+最終的な判断は、その他の情報を含めた専門的評価に基づいて行ってください。
+
+</p>
+
+
+</div>
+
+
+
+
+<button id="resetButton">
+
+リセット
+
+</button>
+
+
+
+</div>
+
+
 
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
