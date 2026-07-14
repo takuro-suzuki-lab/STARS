@@ -41,16 +41,29 @@ const items = [
 
 {
 name:`
-<span class="badge badge-violence">P1</span>
-<span class="item-title">
-乱暴な言動をされた。～～～～～～～～～～～～～～～～～～～～～～～～
-</span>
-<br>
+<div class="item-row">
+
+<div class="badge badge-violence">
+
+P1
+
+</div>
+
+<div class="item-content">
+
+乱暴な言動をされた。～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+
 <span class="example">
+
 例：大声で「バカヤロー」等と怒鳴る。<br>
 「コノヤロー」等の粗暴なメールを送信する。<br>
-あなたの家の前で、車のクラクションを鳴らしたりする。
+あなたの家の前で車のクラクションを鳴らしたりする。
+
 </span>
+
+</div>
+
+</div>
 `,
 score:3,
 category:"violence",
@@ -58,7 +71,27 @@ class:"physical-item"
 },
 
 {
-name:"<span class='badge badge-violence'>P2</span> 項目2",
+name:`
+<div class="item-row">
+
+<div class="badge badge-violence">P2</div>
+
+<div class="item-content">
+
+乱暴な言動をされた。～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+
+<span class="example">
+
+例：大声で「バカヤロー」等と怒鳴る。<br>
+「コノヤロー」等の粗暴なメールを送信する。<br>
+あなたの家の前で車のクラクションを鳴らしたりする。
+
+</span>
+
+</div>
+
+</div>
+`,
 score:3,
 category:"violence",
 class:"physical-item"
@@ -210,7 +243,7 @@ ${item.score}点
 
 </div>
 
-<div class="item-text">
+<div class="item-content">
 
 ${item.name}
 
