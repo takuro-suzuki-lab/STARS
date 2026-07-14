@@ -596,3 +596,29 @@ h3{
     vertical-align:top;
 
 }
+
+.item-row{
+
+    display:flex;
+
+    align-items:flex-start;
+
+}
+
+.badge{
+
+    flex:0 0 42px;
+
+    text-align:center;
+
+    margin-right:12px;
+
+}
+
+.item-content{
+
+    flex:1;
+
+    line-height:1.7;
+
+}
