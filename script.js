@@ -40,7 +40,7 @@ document.getElementById("resetButton");
 const items = [
 
 {
-name:"<span class='badge badge-violence'>P1</span> 乱暴な言動をされた。<br><span class='example'>例：大声で怒鳴る、脅すような発言をする、物に当たる</span>",
+name:"<span class='badge badge-violence'>P1</span> 乱暴な言動をされた。<br><span class='example'>例：あなたに、大声で「バカヤロー」等と怒鳴る。<br>「コノヤロー」等の粗暴な内容のメールを送信する。<br>あなたの家の前で、車のクラクションを鳴らしたりする。</span>",
 score:3,
 category:"violence",
 class:"physical-item"
