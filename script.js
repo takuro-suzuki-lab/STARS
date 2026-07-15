@@ -82,8 +82,8 @@ name:`
 
 <span class="example">
 
-例：あなたを中傷するような内容を他者に告げた。<br>
-あなたの名誉を傷付けるような内容をネット上に載せた。
+例：あなたを中傷するような内容を他者に告げられた。<br>
+あなたの名誉を傷付けるような内容をネット上で拡散された。
 
 </span>
 
@@ -104,12 +104,12 @@ name:`
 
 <div class="item-content">
 
-相手にあなたの所有物を壊されたり，盗まれたりした。
+相手にあなたの所有物を壊されたり、盗まれたりした。
 
 <span class="example">
 
-例：あなたの洋服，バッグ，持ち物，自宅の窓ガラス，車などを故意に壊されたり，傷つけられたりした。<br>
-あなたの所有物が勝手に持ち去られたり，盗まれたりした。
+例：あなたの洋服、持ち物、自宅の窓ガラス、車などを故意に壊されたり、傷つけられたりした。<br>
+あなたの所有物が勝手に持ち去られたり、盗まれたりした。
 
 </span>
 
@@ -130,12 +130,12 @@ name:`
 
 <div class="item-content">
 
-相手からつきまとい行為を受けていたとき，あなたの自宅や職場の住所は公に公開された状態だった。
+あなたの自宅や職場の住所は，現在公に公開されている。
 
 <span class="example">
 
-例：インターネット上であなたの名前と職場の所属部署が紹介されていた。<br>
-自宅と職場が同じ建物であった。
+例：インターネット上であなたの名前と職場の所属部署が紹介されている。<br>
+自宅と職場が同じ建物である。
 
 </span>
 
@@ -156,7 +156,7 @@ name:`
 
 <div class="item-content">
 
-相手からつきまとい行為を受けていたとき，あなたは周囲に相談できる人や頼れる人がいなかった。
+つきまとい行為について、あなたは周囲に相談できる人や頼れる人がいない。
 
 </div>
 
@@ -175,12 +175,12 @@ name:`
 
 <div class="item-content">
 
-相手からつきまとい行為を受けていた頃，相手は違法な薬物や市販薬を乱用していた。
+相手は違法な薬物や市販薬を乱用している。
 
 <span class="example">
 
-例：違法薬物（大麻、有機溶剤、覚せい剤、コカイン、ヘロイン、LSDなど）や危険ドラッグ（ハーブ、リキッド、パウダーなど）を使用していた。<br>
-市販薬や処方薬を大量に服薬していた。
+例：違法薬物（大麻、有機溶剤、覚せい剤、コカイン、ヘロイン、LSDなど）や危険ドラッグ（ハーブ、リキッド、パウダーなど）を使用している。<br>
+市販薬や処方薬を大量に服薬している。
 
 </span>
 
@@ -206,13 +206,12 @@ S1
 
 <div class="item-content">
 
-乱暴な言動をされた。～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+性的しゅう恥心を侵害するようなことをされた（あなたを性的に恥ずかしめる行為）
 
 <span class="example">
 
-例：大声で「バカヤロー」等と怒鳴る。<br>
-「コノヤロー」等の粗暴なメールを送信する。<br>
-あなたの家の前で車のクラクションを鳴らしたりする。
+例：わいせつな写真を、あなたの自宅等に送り付けられた。<br>
+電話や手紙，テキストメッセージなどで、卑わいな言葉を告げられた。 
 
 </span>
 
@@ -220,28 +219,71 @@ S1
 
 </div>
 `,
-score:3,
+score:2,
 category:"sexual",
 class:"sexual-item"
 },
 
 {
-name:"<span class='badge badge-sexual'>S2</span> 項目2",
-score:3,
+name:`
+<div class="item-row">
+
+<div class="badge badge-sexual">S2</div>
+
+<div class="item-content">
+
+GPS機器や紛失防止タグ（AirTagなど）を用いて位置情報を取得された。
+
+<span class="example">
+
+あなたの車両や所有物にGPS機器や紛失防止タグなどを取り付けられて、あなたの位置情報を勝手に取得された。<br>
+あなたのスマートフォン等を勝手に操作し、記録されている位置情報を見られた。
+
+</span>
+
+</div>
+
+</div>
+`,
+score:1,
 category:"sexual",
 class:"sexual-item"
 },
 
 {
-name:"<span class='badge badge-sexual'>S3</span> 項目3",
-score:3,
+name:`
+<div class="item-row">
+
+<div class="badge badge-sexual">S3</div>
+
+<div class="item-content">
+
+あなたは、相手からつきまとい行為を受けているのは、自分に責任があると感じている。
+
+</div>
+
+</div>
+`,
+score:1,
 category:"sexual",
 class:"sexual-item"
 },
 
 {
-name:"<span class='badge badge-sexual'>S4</span> 項目4",
-score:3,
+name:`
+<div class="item-row">
+
+<div class="badge badge-sexual">S4</div>
+
+<div class="item-content">
+
+相手はあなたと交際すること（恋愛関係になること）を求めている。
+
+</div>
+
+</div>
+`,
+score:2,
 category:"sexual",
 class:"sexual-item"
 },
@@ -250,7 +292,7 @@ class:"sexual-item"
 {
 type:"notice",
 text:
-"※以下の項目（項目11、12）は、加害者が元親密関係にあった場合にお答えください。"
+"以下の項目は、相手が元親密関係（元交際相手や元配偶者など）である場合のみお答えください。"
 },
 
 
@@ -266,9 +308,8 @@ name:`
 
 <span class="example">
 
-例：暴力を振るわれたり，身体を傷つけられたりした。<br>
-物（家具，鈍器など）で殴られた。<br>
-物を投げつけられた。
+例：平手打ち、殴打、蹴る、噛みつく、髪を引っ張るなどされた。<br>
+物で殴られたり，刃物で切りつけられたりした
 
 </span>
 
@@ -283,8 +324,27 @@ class:"physical-item"
 
 
 {
-name:"<span class='badge badge-sexual'>S5</span> 項目5",
-score:3,
+name:`
+<div class="item-row">
+
+<div class="badge badge-violence">S5</div>
+
+<div class="item-content">
+
+交際中または婚姻中に、相手から強引に性的行為をされたことがある。
+
+<span class="example">
+
+例：嫌だと言っているのに，無理やり性行為やキスをされた。<br>
+強引に体を触られた。
+
+</span>
+
+</div>
+
+</div>
+`,
+score:7,
 category:"sexual",
 class:"sexual-item"
 }
