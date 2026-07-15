@@ -589,7 +589,7 @@ h3{
 
 .check-area{
 
-    width:45px;
+    width:48px;
 
     text-align:center;
 
@@ -598,6 +598,10 @@ h3{
 }
 
 .score-small{
+
+    display:block;
+
+    text-align:center;
 
     margin-top:4px;
 
