@@ -51,13 +51,13 @@ P1
 
 <div class="item-content">
 
-乱暴な言動をされた。～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+相手から乱暴な言動を受けた。
 
 <span class="example">
 
-例：大声で「バカヤロー」等と怒鳴る。<br>
-「コノヤロー」等の粗暴なメールを送信する。<br>
-あなたの家の前で車のクラクションを鳴らしたりする。
+例：大声で「バカヤロー」等と怒鳴られた。<br>
+「コノヤロー」等の粗暴なメールが送られた。<br>
+あなたの家の前で車のクラクションを鳴らしたりされた。
 
 </span>
 
@@ -65,7 +65,7 @@ P1
 
 </div>
 `,
-score:3,
+score:1,
 category:"violence",
 class:"physical-item"
 },
@@ -78,13 +78,38 @@ name:`
 
 <div class="item-content">
 
-乱暴な言動をされた。～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+相手に名誉を傷つけられた。
 
 <span class="example">
 
-例：大声で「バカヤロー」等と怒鳴る。<br>
-「コノヤロー」等の粗暴なメールを送信する。<br>
-あなたの家の前で車のクラクションを鳴らしたりする。
+例：あなたを中傷するような内容を他者に告げた。<br>
+あなたの名誉を傷付けるような内容をネット上に載せた。
+
+</span>
+
+</div>
+
+</div>
+`,
+score:1,
+category:"violence",
+class:"physical-item"
+},
+
+{
+name:`
+<div class="item-row">
+
+<div class="badge badge-violence">P3</div>
+
+<div class="item-content">
+
+相手にあなたの所有物を壊されたり，盗まれたりした。
+
+<span class="example">
+
+例：あなたの洋服，バッグ，持ち物，自宅の窓ガラス，車などを故意に壊されたり，傷つけられたりした。<br>
+あなたの所有物が勝手に持ち去られたり，盗まれたりした。
 
 </span>
 
@@ -96,31 +121,74 @@ score:3,
 category:"violence",
 class:"physical-item"
 },
-
+  
 {
-name:"<span class='badge badge-violence'>P3</span> 項目3",
-score:3,
+name:`
+<div class="item-row">
+
+<div class="badge badge-violence">P4</div>
+
+<div class="item-content">
+
+相手からつきまとい行為を受けていたとき，あなたの自宅や職場の住所は公に公開された状態だった。
+
+<span class="example">
+
+例：インターネット上であなたの名前と職場の所属部署が紹介されていた。<br>
+自宅と職場が同じ建物であった。
+
+</span>
+
+</div>
+
+</div>
+`,
+score:1,
 category:"violence",
 class:"physical-item"
 },
 
 {
-name:"<span class='badge badge-violence'>P4</span> 項目4",
-score:3,
+name:`
+<div class="item-row">
+
+<div class="badge badge-violence">P5</div>
+
+<div class="item-content">
+
+相手からつきまとい行為を受けていたとき，あなたは周囲に相談できる人や頼れる人がいなかった。
+
+</div>
+
+</div>
+`,
+score:1,
 category:"violence",
 class:"physical-item"
 },
 
 {
-name:"<span class='badge badge-violence'>P5</span> 項目5",
-score:3,
-category:"violence",
-class:"physical-item"
-},
+name:`
+<div class="item-row">
 
-{
-name:"<span class='badge badge-violence'>P6</span> 項目6",
-score:3,
+<div class="badge badge-violence">P6</div>
+
+<div class="item-content">
+
+相手からつきまとい行為を受けていた頃，相手は違法な薬物や市販薬を乱用していた。
+
+<span class="example">
+
+例：違法薬物（大麻、有機溶剤、覚せい剤、コカイン、ヘロイン、LSDなど）や危険ドラッグ（ハーブ、リキッド、パウダーなど）を使用していた。<br>
+市販薬や処方薬を大量に服薬していた。
+
+</span>
+
+</div>
+
+</div>
+`,
+score:2,
 category:"violence",
 class:"physical-item"
 },
@@ -187,8 +255,28 @@ text:
 
 
 {
-name:"<span class='badge badge-violence'>P7</span> 項目7",
-score:3,
+name:`
+<div class="item-row">
+
+<div class="badge badge-violence">P7</div>
+
+<div class="item-content">
+
+交際中または婚姻中に，相手から身体的な暴力を振るわれたことがある。
+
+<span class="example">
+
+例：暴力を振るわれたり，身体を傷つけられたりした。<br>
+物（家具，鈍器など）で殴られた。<br>
+物を投げつけられた。
+
+</span>
+
+</div>
+
+</div>
+`,
+score:5,
 category:"violence",
 class:"physical-item"
 },
