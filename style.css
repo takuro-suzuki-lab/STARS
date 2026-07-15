@@ -629,20 +629,16 @@ h3{
 }
 
 .item-row{
-
     display:flex;
-
     align-items:flex-start;
-
+    width:100%;
 }
 
 
 .item-content{
-
     flex:1;
-
+    min-width:0;
     line-height:1.7;
-
 }
 
 .guide-badge{
