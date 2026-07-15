@@ -175,7 +175,7 @@ name:`
 
 <div class="item-content">
 
-相手は違法な薬物や市販薬。処方薬を乱用している。
+相手は違法な薬物や市販薬、処方薬を乱用している。
 
 <span class="example">
 
