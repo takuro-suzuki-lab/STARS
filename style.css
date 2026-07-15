@@ -236,21 +236,6 @@ td {
 
 /* 注意事項 */
 
-.notice {
-
-    background:#f8f8f8;
-    
-    padding:8px 20px;
-
-    border-radius:10px;
-
-    line-height:1.7;
-
-    font-size:18px;
-
-}
-
-
 .notice h3 {
 
     margin-top:0;
@@ -349,7 +334,7 @@ h1 {
 
     margin-bottom:30px;
 
-    font-size:18px;
+    font-size:17px;
 
 }
 
@@ -412,9 +397,22 @@ h1 {
 }
 
 /* 項目10後の注意文の余白 */
-.notice {
-    margin-top: 30px;
-    margin-bottom: 10px;
+.notice{
+
+    background:#f8f8f8;
+
+    padding:8px 20px;
+
+    border-radius:10px;
+
+    line-height:1.7;
+
+    font-size:17px;
+
+    margin-top:30px;
+
+    margin-bottom:10px;
+
 }
 .badge{
 
