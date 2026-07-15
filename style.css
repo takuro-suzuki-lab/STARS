@@ -648,15 +648,27 @@ h3{
 
 .footer{
 
-    margin-top:50px;
+    margin-top:25px;
 
     text-align:center;
 
     color:#888;
 
-    font-size:14px;
+    font-size:13px;
 
-    line-height:1.6;
+    line-height:1.4;
+
+}
+
+.footer p{
+
+    margin:4px 0;
+
+}
+
+.footer hr{
+
+    margin-bottom:18px;
 
 }
 
