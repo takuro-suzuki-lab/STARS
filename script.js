@@ -292,7 +292,7 @@ class:"sexual-item"
 {
 type:"notice",
 text:
-"以下の項目は、<strong><u>相手が以前に交際や結婚していた人である場合のみ</u></strong>お答えください。"
+"以下の項目は、<strong><u>相手が以前に交際または結婚していた人である場合のみ</u></strong>お答えください。"
 },
 
 
@@ -509,7 +509,7 @@ if(violenceScore <=3){
 violenceRiskDisplay.textContent =
 "🟢 低い";
 violenceComment.textContent =
-"身体的暴力に発展するリスクは比較的低いと考えられます。引き続き状況の変化に注意してください。";
+"現時点では、身体的暴力に発展するリスクは比較的低いと考えられます。ただし、状況が変化する可能性もあるため、引き続き経過に注意してください。";
 
 violenceRiskDisplay.className="low";
 
@@ -520,9 +520,9 @@ else if(violenceScore ===4){
 
 
 violenceRiskDisplay.textContent =
-"🟡 高い";
+"🟡 要注意";
 violenceComment.textContent =
-"身体的暴力に発展する可能性があります。対象者の状況を慎重に観察してください。";
+"身体的暴力に発展する可能性があります。状況の変化に十分注意し、必要に応じて周囲の人や関係機関へ相談することを検討してください。";
 
 violenceRiskDisplay.className="medium";
 
@@ -533,9 +533,9 @@ else{
 
 
 violenceRiskDisplay.textContent =
-"🔴 非常に高い";
+"🔴 高い";
 violenceComment.textContent =
-"身体的暴力へ発展するリスクが非常に高いと考えられます。速やかな安全確保と関係機関との連携を検討してください。";
+"身体的暴力に発展するリスクが高いと考えられます。安全確保を最優先とし、必要に応じて警察や支援機関などへの相談を検討してください。";
 
 violenceRiskDisplay.className="high";
 
@@ -554,7 +554,7 @@ if(sexualScore <=2){
 sexualRiskDisplay.textContent =
 "🟢 低い";
 sexualComment.textContent =
-"性的暴力に発展するリスクは比較的低いと考えられます。引き続き状況の変化に注意してください。";
+"現時点では、性的暴力に発展するリスクは比較的低いと考えられます。ただし、状況が変化する可能性もあるため、引き続き経過に注意してください。";
 
 sexualRiskDisplay.className="low";
 
@@ -565,9 +565,9 @@ else if(sexualScore ===3){
 
 
 sexualRiskDisplay.textContent =
-"🟡 高い";
+"🟡 要注意";
 sexualComment.textContent =
-"性的暴力に発展する可能性があります。対象者の状況を慎重に観察してください。";
+"性的暴力に発展する可能性があります。状況の変化に十分注意し、必要に応じて周囲の人や関係機関へ相談することを検討してください。";
 
 sexualRiskDisplay.className="medium";
 
@@ -578,9 +578,9 @@ else{
 
 
 sexualRiskDisplay.textContent =
-"🔴 非常に高い";
+"🔴 高い";
 sexualComment.textContent =
-"性的暴力へ発展するリスクが非常に高いと考えられます。速やかな安全確保と関係機関との連携を検討してください。";
+"性的暴力に発展するリスクが高いと考えられます。安全確保を最優先とし、必要に応じて警察や支援機関などへの相談を検討してください。";
 
 sexualRiskDisplay.className="high";
 
