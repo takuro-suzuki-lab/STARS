@@ -363,17 +363,6 @@ items.forEach((item)=>{
 const row=document.createElement("div");
 
 
-if(item.type==="title"){
-
-row.className =
-"category-title " + item.class;
-
-row.innerHTML =
-item.title;
-
-}
-
-
 else if(item.type==="notice"){
 
 
