@@ -393,11 +393,7 @@ items.forEach((item)=>{
 
     </div>
 
-    <div class="item-text">
-
         ${item.name}
-
-    </div>
 
 </label>
 
