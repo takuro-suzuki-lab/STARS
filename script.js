@@ -360,65 +360,52 @@ class:"sexual-item"
 
 items.forEach((item)=>{
 
-const row=document.createElement("div");
+    const row = document.createElement("div");
 
+    if(item.type==="notice"){
 
-else if(item.type==="notice"){
+        row.className="notice";
 
+        row.innerHTML=`<p>${item.text}</p>`;
 
-row.className="notice";
+    }
 
-row.innerHTML =
-`<p>${item.text}</p>`;
+    else{
 
+        row.className="item " + item.class;
 
-}
+        row.innerHTML=`
 
-
-else{
-
-
-row.className =
-"item " + item.class;
-
-
-row.innerHTML =
-
-`
 <label class="item-label">
 
-<div class="check-area">
+    <div class="check-area">
 
-<input
-type="checkbox"
-class="riskItem"
-data-score="${item.score}"
-data-category="${item.category}"
->
+        <input
+            type="checkbox"
+            class="riskItem"
+            data-score="${item.score}"
+            data-category="${item.category}"
+        >
 
-<div class="score-small">
+        <div class="score-small">
+            ${item.score}点
+        </div>
 
-${item.score}点
+    </div>
 
-</div>
+    <div class="item-text">
 
-</div>
+        ${item.name}
 
-<div class="item-content">
-
-${item.name}
-
-</div>
+    </div>
 
 </label>
 
 `;
 
-}
+    }
 
-
-checklist.appendChild(row);
-
+    checklist.appendChild(row);
 
 });
 
