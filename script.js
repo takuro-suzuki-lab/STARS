@@ -327,7 +327,7 @@ class:"physical-item"
 name:`
 <div class="item-row">
 
-<div class="badge badge-violence">S5</div>
+<div class="badge badge-sexual">S5</div>
 
 <div class="item-content">
 
