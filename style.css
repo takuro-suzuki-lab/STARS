@@ -681,3 +681,11 @@ h3{
     margin:0 auto 20px auto;
 
 }
+
+.score-cell{
+
+    background:#f3f4f6;
+
+    font-weight:bold;
+
+}
