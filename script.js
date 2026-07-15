@@ -43,11 +43,7 @@ const items = [
 name:`
 <div class="item-row">
 
-<div class="badge badge-violence">
-
-P1
-
-</div>
+<div class="badge badge-violence">P1</div>
 
 <div class="item-content">
 
@@ -198,11 +194,7 @@ class:"physical-item"
 name:`
 <div class="item-row">
 
-<div class="badge badge-sexual">
-
-S1
-
-</div>
+<div class="badge badge-sexual">S1</div>
 
 <div class="item-content">
 
