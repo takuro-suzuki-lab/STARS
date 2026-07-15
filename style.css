@@ -418,6 +418,8 @@ h1 {
 
     display:inline-block;
 
+    flex:0 0 42px;
+
     min-width:38px;
 
     padding:4px 8px;
@@ -428,13 +430,14 @@ h1 {
 
     font-weight:bold;
 
-    text-align:center;
-
-    margin-right:3px;
-
     font-size:16px;
 
+    text-align:center;
+
+    margin-right:12px;
+
 }
+
 
 .badge-violence{
 
@@ -601,15 +604,6 @@ h3{
 
 }
 
-.badge{
-
-    flex:0 0 42px;
-
-    text-align:center;
-
-    margin-right:12px;
-
-}
 
 .item-content{
 
