@@ -693,10 +693,19 @@ h3{
 .reference{
     margin-top:30px;
     font-size:15px;
-    color:#555;
     line-height:1.8;
+    color:#555;
 }
 
 .reference h3{
-    margin-bottom:12px;
+    margin-bottom:15px;
+}
+
+.citation{
+    margin-top:15px;
+    padding:15px;
+    background:#f8f9fa;
+    border-left:4px solid #1f3c88;
+    border-radius:6px;
+    font-size:14px;
 }
